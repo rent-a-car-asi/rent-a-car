@@ -1,0 +1,12 @@
+/****************** DATATIMEPICKER ******************/
+.gj-picker-md [role=header],
+.gj-picker-md [role=switch],
+.gj-picker-md table tr td.selected.gj-cursor-pointer div  {
+    background: #343a40 !important;
+}
+
+.gj-picker-md [role=footer] button.gj-button-md,
+.gj-picker-md table tr td.today div {
+    color: #66101F !important;
+    font-weight: bold;
+}

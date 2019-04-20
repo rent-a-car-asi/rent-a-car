@@ -1,0 +1,25 @@
+.book-now{
+    background-color: #66101F !important;
+    background-repeat: repeat-x; 
+    border-color: #2f080e #2f080e hsl(351, 68%, 1.5%);
+    color: #fff !important; 
+}
+ 
+.book-now:hover, 
+.book-now:focus, 
+.book-now:active, 
+.book-now.active, 
+.open .dropdown-toggle.btn-danger {
+    background-color: #ffffff !important;
+    border: #66101F solid 2px !important;
+    color: #66101F !important;
+    font-weight: bold;
+}
+/************************** CHECKBOX *************************/
+.custom-control-label:before{
+    background-color:#8A8E91;
+}
+
+.custom-checkbox .custom-control-input:checked~.custom-control-label::before{
+    background-color:black;
+}
