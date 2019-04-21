@@ -76,6 +76,13 @@ form label {
 }
 
 /* Full-width input fields */
+
+.form-row > .col,
+.form-row > [class*="col-"] {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
 input {
   display: block;
   width: 100%;
