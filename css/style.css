@@ -444,7 +444,7 @@ padding: 10% 0 0 40%;
     color: #fff !important; 
 }
 
-.btn-danger{
+/* .btn-danger{
     background-color: #66101F !important;
     background-repeat: repeat-x; 
     border-color: #66101F !important;
@@ -459,7 +459,7 @@ padding: 10% 0 0 40%;
     background-color:  #2f0802 !important;
     border:  #2f0802 solid 2px !important;
     font-weight: bold;
-}
+} */
 
 /************************ CUSTOM ******************************/
 
@@ -509,6 +509,77 @@ hr {
 
 .sidebar-box-legend {
     background-color: #66101F !important;
+}
+
+/******** FILTER BY CAR **********/
+.car-type ul {
+  list-style-type: none;
+}
+
+.car-type li {
+  display: inline-block;
+}
+
+.car-type input[type="checkbox"][id^="customCheck"] {
+  display: none;
+}
+
+.car-type label {
+  border: 1px solid #fff;
+  padding: 10px;
+  display: block;
+  position: relative;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.car-type label:before {
+  background-color: white;
+  color: white;
+  content: " ";
+  display: block;
+  border-radius: 50%;
+  border: 1px solid grey;
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  width: 25px;
+  height: 25px;
+  text-align: center;
+  line-height: 28px;
+  transition-duration: 0.4s;
+  transform: scale(0);
+}
+
+.car-type label img {
+  height: 80px;
+  width: 80px;
+  transition-duration: 0.2s;
+  transform-origin: 50% 50%;
+}
+
+.car-type :checked + label {
+  border-color: #ddd;
+}
+
+.car-type :checked + label:before {
+  content: "✓";
+  background-color: #66101F;
+  transform: scale(1);
+}
+
+.car-type :checked + label img {
+  transform: scale(0.9);
+  box-shadow: 0 0 5px #333;
+  z-index: -1;
+}
+
+.car-footer i,
+.car-footer img,
+.car-extrases i,
+.car-extrases img {
+  margin-right: 20px;
+  margin-left: 10px;
 }
 
 
