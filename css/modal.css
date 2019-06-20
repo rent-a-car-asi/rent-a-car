@@ -7,10 +7,22 @@
   }
   
   .price-includes i {
+      color: green;
+  }
+  
+  .x .price-includes i {
       line-height: 1.6;
       color: green;
   }
   /* Box styles */
+  
+  .hidden {
+      display: none;
+  }
+  
+  .add {
+      color: green;
+  }
   
   .myBox {
       border: 1px solid;
@@ -19,26 +31,6 @@
       margin: 2% 0;
       height: 450px;
       overflow-y: scroll;
-  }
-  /* Scrollbar styles */
-  
-   ::-webkit-scrollbar {
-      width: 12px;
-      height: 12px;
-  }
-  
-   ::-webkit-scrollbar-track {
-      border: 1px solid yellowgreen;
-      border-radius: 10px;
-  }
-  
-   ::-webkit-scrollbar-thumb {
-      background: yellowgreen;
-      border-radius: 10px;
-  }
-  
-   ::-webkit-scrollbar-thumb:hover {
-      background: #88ba1c;
   }
   
   .submit-button {
@@ -52,6 +44,10 @@
   
   .photos {
       padding: 30px;
+  }
+  
+  .extrases-b {
+      padding-top: 20px;
   }
   
   .info {
@@ -132,7 +128,7 @@
   }
   
   .sw-main {
-      min-height: 600px;
+      min-height: 620px;
   }
   
   .sw-main .sw-toolbar {
@@ -145,4 +141,24 @@
       border: 1px solid black;
       border-radius: 10%;
       padding: 10%;
+  }
+  
+  .finish {
+      text-align: center;
+      padding: 10%;
+  }
+  
+  .card-header {
+      padding: 5px !important;
+  }
+  
+  .required label {
+      font-weight: bold;
+  }
+  
+  .required label:after {
+      color: #e32;
+      content: ' *';
+      display: inline;
+      font-weight: normal;
   }
