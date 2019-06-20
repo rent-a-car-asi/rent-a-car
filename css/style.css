@@ -582,6 +582,11 @@ hr {
   margin-left: 10px;
 }
 
-
+.modal-action-button{
+  background-color: #66101f;
+  color: white;
+  cursor: pointer;
+  opacity: 0.9;
+}
 
 
