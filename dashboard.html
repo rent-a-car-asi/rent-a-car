@@ -58,11 +58,11 @@
 
     <!-- Optional SmartWizard theme -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.css" rel="stylesheet" type="text/css" />
 
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.bundle.js'></script>
-	<script src='https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.js'></script>
-    
-
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.bundle.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js'></script>
 
 
   </head>
@@ -103,8 +103,40 @@
             </div>
             <br />
         </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12" style="border-style: solid; border-width: 2px">
+                    <h2 style="text-align: center">Контролен панел</h2>
+                </div>
+            </div>
+            <div class="row" style="margin-top: 0.5em">
+                <div class="col-lg-6" style="border-style: solid; border-width: 2px">
+                    <canvas id="barChart" height="300px" width="auto"></canvas>
+                </div>
+                <div class="col-lg-6" style="border-style: solid; border-width: 2px">
+                    <h3 style="text-align: center">Общи данни</h3>
+                    <ul style="margin-left: 3em; font-size: 18px">
+                        <li>Печалба за последния месец:  <i class="fa fa-euro-sign"></i>12 000</li>
+                        <li>Печалба за последното тримесичие:  <i class="fa fa-euro-sign"></i>40 000</li>
+                        <li>Печалба за последната година:  <i class="fa fa-euro-sign"></i>150 000</li>
+                        <li>Наети коли през последната седмица: 15</li>
+                        <li>Наети коли през последния месец: 40</li>
+                        <li>Наети коли през последното тримесичие: 150</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row" style="margin-top:0.5em; margin-bottom: 2em">
+                <div class="col-lg-6" style="border-style: solid; border-width: 2px">
+                    <canvas id="lineChart" height="200px" width="auto"></canvas>    
+                </div> 
+                <div class='col-lg-6' style="border-style: solid; border-width: 2px">
+                    <canvas id="pieChart" height="200px" width="auto"></canvas>
+                </div>  
+            </div>
+        </div>
 
         
+
 
         <footer class="footer mt-auto py-3">
             <div class="container-fluid">
@@ -121,6 +153,7 @@
             </div>
         
         </footer>
+        <script src='./js/charts.js'></script>
   </body>
 
 </html>
