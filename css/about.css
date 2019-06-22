@@ -1,0 +1,168 @@
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Montserrat", sans-serif;
+  color: #222222;
+  line-height: 1.2em !important;
+  margin-bottom: 0;
+  margin-top: 0;
+  font-weight: 600;
+}
+
+.text-white { color: #fff; }
+.text-black { color: #000; }
+
+.no-padding { padding: 0; }
+
+.transition {
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.text-center { text-align: center; }
+.text-left { text-align: left; }
+.text-rigth { text-align: right; }
+
+.relative { position: relative; }
+
+h1 { font-size: 36px; }
+h2 { font-size: 30px; }
+h3 { font-size: 24px; }
+h4 { font-size: 18px; }
+h5 { font-size: 16px; }
+h6 { font-size: 14px; }
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.5em;
+}
+
+.section-gap {
+  padding: 80px 0;
+}
+
+.banner-area {
+  background: url(../images/header-bg.jpg) center;
+  background-size: cover;
+  max-height: 220px;
+}
+
+@media (max-width: 767px) {
+  .fullscreen {
+    height: 100% !important;
+  }
+}
+
+.feature-area {
+  background-color: #fff;
+}
+
+.feature-area .header-text {
+  text-align: center;
+}
+
+.feature-area .header-text h1 {
+  margin-bottom: 20px;
+}
+
+.feature-area .d-flex {
+  padding-bottom: 20px;
+}
+
+.single-feature {
+  border-radius: 10px;
+  background-color: #e9ecef;
+  padding: 30px;
+  margin-bottom: 30px;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  border: 2px solid #66101f;
+  
+}
+
+.single-feature:hover {
+  box-shadow: -14.142px 14.142px 20px 0px rgba(157, 157, 157, 0.5);
+  cursor: pointer;
+}
+
+.single-feature:hover p {
+  color: #222;
+}
+
+.single-feature:hover h4 {
+  color: #66101f;
+}
+
+.single-feature h4 {
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.single-feature h4 .lnr {
+  margin-right: 15px;
+}
+
+@media (max-width: 991.98px) {
+  .single-feature {
+    margin-bottom: 60px;
+  }
+}
+
+.home-about-area .home-about-left img {
+  width: 100%;
+  max-height: 370px;
+}
+
+.home-about-area .home-about-right {
+  padding-right: 20%;
+  padding-left: 4%;
+  padding-top: 60px;
+}
+
+.home-about-area .home-about-right h1 {
+  margin-bottom: 20px;
+}
+
+.home-about-area .home-about-right p span {
+  font-weight: 500;
+  color: #222;
+}
+
+@media (max-width: 1366px) {
+  .home-about-area .home-about-right {
+    padding-right: 5%;
+    padding-left: 4%;
+  }
+}
+
+@media (max-width: 960px) {
+  .home-about-area .home-about-right {
+    margin-top: 40px;
+  }
+}
+
+.about-content {
+  padding: 82px 0px;
+  text-align: center;
+}
+
+.about-content h1 {
+  font-size: 48px;
+  font-weight: 600;
+}
+
+.about-content a {
+  color: #fff;
+  font-weight: 300;
+  font-size: 14px;
+}
+
+.about-content .lnr {
+  margin: 0px 10px;
+  font-weight: 600;
+}
