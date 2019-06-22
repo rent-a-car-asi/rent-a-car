@@ -2,7 +2,7 @@ function loadJSON(callback) {
   var xobj = new XMLHttpRequest();
   xobj.overrideMimeType("application/json");
   xobj.open("GET", "cars-list.json", true); // Replace 'my_data' with the path to your file
-  xobj.onreadystatechange = function() {
+  xobj.onreadystatechange = function () {
     if (xobj.readyState == 4 && xobj.status == "200") {
       callback(xobj.responseText);
     }
@@ -80,23 +80,23 @@ function filterCars(data) {
   var brand = [];
   var type = [];
 
-  $.each($("input[name='price']:checked"), function() {
+  $.each($("input[name='price']:checked"), function () {
     price.push($(this).val());
   });
 
-  $.each($("input[name='speed']:checked"), function() {
+  $.each($("input[name='speed']:checked"), function () {
     speed.push($(this).val());
   });
 
-  $.each($("input[name='engine']:checked"), function() {
+  $.each($("input[name='engine']:checked"), function () {
     engine.push($(this).val());
   });
 
-  $.each($("input[name='brand']:checked"), function() {
+  $.each($("input[name='brand']:checked"), function () {
     brand.push($(this).val());
   });
 
-  $.each($("input[name='type']:checked"), function() {
+  $.each($("input[name='type']:checked"), function () {
     type.push($(this).val());
   });
 
@@ -182,19 +182,19 @@ function createCarList(data) {
   });
 }
 // Back to Top
-$(document).ready(function() {
-  $(window).scroll(function() {
+$(document).ready(function () {
+  $(window).scroll(function () {
     if ($(this).scrollTop() > 50) $("#back-to-top").fadeIn();
     else $("#back-to-top").fadeOut();
   });
 
   // scroll body to 0px on click
-  $("#back-to-top").click(function() {
+  $("#back-to-top").click(function () {
     $("body,html").animate({ scrollTop: 0 }, 800);
     return false;
   });
 
-  $(".sidebar-box-header").click(function() {
+  $(".sidebar-box-header").click(function () {
     $(this)
       .find("i")
       .not(".fa-filter")
@@ -217,7 +217,7 @@ $(document).ready(function() {
     format: "dd.mm.yyyy",
     value: getFormattedDate(today),
     minDate: today,
-    change: function(e) {
+    change: function (e) {
       var str = $("#startDate").val();
       var parts = str.split(".");
       start = new Date(parts[2], parts[1] - 1, parts[0]);
@@ -241,10 +241,10 @@ $(document).ready(function() {
     iconsLibrary: "fontawesome",
     format: "dd.mm.yyyy",
     value: getFormattedDate(today),
-    minDate: function() {
+    minDate: function () {
       return $("#startDate").val();
     },
-    change: function(e) {
+    change: function (e) {
       var str = $("#endDate").val();
       var parts = str.split(".");
       end = new Date(parts[2], parts[1] - 1, parts[0]);
@@ -265,10 +265,10 @@ $(document).ready(function() {
 
   let data = null;
   let fullData = null;
-  loadJSON(function(response) {
+  loadJSON(function (response) {
     // Parse JSON string into object
     data = JSON.parse(response);
-    data = Object.keys(data).map(function(key) {
+    data = Object.keys(data).map(function (key) {
       return [key, data[key]];
     });
     data = sortBy(data, "price");
@@ -276,12 +276,12 @@ $(document).ready(function() {
     createCarList(data);
   });
 
-  $("input[type='checkbox']").change(function() {
+  $("input[type='checkbox']").change(function () {
     clearCarList(data.length);
     data = filterCars(fullData);
   });
 
-  $("#sel1").change(function(e) {
+  $("#sel1").change(function (e) {
     clearCarList(data.length);
     data = sortBy(data, e.target.value);
     createCarList(data);

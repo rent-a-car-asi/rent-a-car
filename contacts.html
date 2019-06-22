@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <title> Rent A Car </title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" />
+    <!-- <link rel="stylesheet" href="./css/datapicker.css" /> -->
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+
+    <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script
+        src="https://code.jquery.com/jquery-3.3.1.min.js?fbclid=IwAR39sgO3R5u_yrU9XO9way3A8pucAJg87V19QKkZtwdVVTVedkz09TSGvTo"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://unpkg.com/gijgo@1.9.13/js/gijgo.min.js"></script>
+    <script src="./js/numscroller-1.0.js"></script>
+    <script src="./js/scripts.js"></script>
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">
+            <img src="./images/icons/car-icon.png" height="42" width="42" />
+            RENT A CAR
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent"
+            aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- NAVBAR -->
+        <div class="collapse navbar-collapse" id="navbarContent">
+            <ul class="navbar-nav mr-auto"></ul>
+            <ul class="navbar-nav navbar-right my-2 my-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">НАЧАЛО</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">ЗА НАС</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">КОНТАКТИ</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <!-- CONTACT FROM -->
+    <section class="contacts">
+        <h1>Свържи се с нас</h1>
+        <form id="contact-form" method="post" action="contact.php" role="form">
+
+            <div class="messages"></div>
+
+            <div class="controls">
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="form_name">Име:<strong class="asterisk">*</strong></label>
+                            <input id="form_name" type="text" name="name" class="form-control"
+                                placeholder="Въведете име" required="required">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="form_tel">Телефон:<strong class="asterisk">*</strong></label>
+                            <input id="form_tel" type="tel" name="telephone" class="form-control"
+                                placeholder="Въведете телефон" required="required">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="form_email">Email:<strong class="asterisk">*</strong></label>
+                            <input id="form_email" type="email" name="email" class="form-control"
+                                placeholder="Въведете имейл" required="required">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="form_need">Предмет:<strong class="asterisk">*</strong></label>
+                            <input id="form_need" type="text" name="need" class="form-control"
+                                placeholder="Въведете тема" required="required">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="form-group">
+                            <label for="form_message">Съобщение:<strong class="asterisk">*</strong></label>
+                            <textarea id="form_message" name="message" class="form-control"
+                                placeholder="Въведете съобщение" rows="4" required="required"></textarea>
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <input type="submit" class="btn btn-success btn-send" value="Изпрати">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <p class="text-muted">
+                            <strong class="asterisk">*</strong> Тези полета са задължителни.
+                    </div>
+                </div>
+            </div>
+
+        </form>
+    </section>
+    <!-- END CONTACT FORM -->
+
+    <!-- Services -->
+    <section id="section2" style="margin-bottom: 50px;">
+        <section class="container">
+            <div class="row">
+                <div class="col-md-4 col-xs-12 service">
+                    <div class="circle"><i class="fa fa-map-marker"></i></i></div>
+                    <strong>Адрес</strong>
+                    <p>
+                        ж.к. Студентски град, ул. Тончев №5
+                    </p>
+                </div>
+                <div class="col-md-4 col-xs-12 service">
+                    <div class="circle"><i class="fa fa-envelope"></i></div>
+                    <strong>Email</strong>
+                    <p>
+                        georgiev@rentacar.bg
+                    </p>
+                </div>
+                <div class="col-md-4 col-xs-12 service">
+                    <div class="circle"><i class="fa fa-phone
+                        "></i></div>
+                    <strong>Телефон</strong>
+                    <p>
+                        +359 88 909 5325
+                    </p>
+                </div>
+            </div>
+        </section>
+        <!-- END Services -->
+    </section>
+
+    <!--FOOTER-->
+    <footer class="footer mt-auto py-3">
+        <div class="container-fluid">
+            <div class="header-footer pull-left">
+                <a href="#">&copy; Rent A Car</a>
+            </div>
+
+            <div class="links-footer pull-left">
+                <a href="#">Начало</a>
+                <a href="#">За нас</a>
+                <a href="#">Контакти</a>
+            </div>
+
+            <div class="phone-footer pull-right">
+                <a>За връзка с нас: 088 1234 5678</a>
+            </div>
+        </div>
+    </footer>
+
+    <a id="back-to-top" href="#" class="back-to-top" role="button" title="Click to return on the top page"
+        data-placement="left"><i class="fas fa-chevron-circle-up"></i></a>
+
+</body>
+
+</html>
