@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="bg">
+
+<head>
+    <title> Rent A Car </title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+    <link rel="stylesheet" href="../css/style.css" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">
+            <img src="../images/icons/car-icon.png" height="42" width="42" /> RENT A CAR
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+        <div class="collapse navbar-collapse" id="navbarContent">
+            <ul class="navbar-nav mr-auto"></ul>
+            <ul class="navbar-nav navbar-right my-2 my-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="./index.html">НАЧАЛО</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./employee-view.html">ОБЩ ПРЕГЛЕД</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./view-queries.html">ЗАЯВКИ</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./employee-management.html">СЛУЖИТЕЛИ</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./login.html">ИЗХОД</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <br />
+    <main>
+        <div class="container">
+            <div class="header-car-list-manage-employee">
+                <p class="pull-left" style="font-size: 25px">Управление на служители</p>
+                <p class="pull-right">
+                    <button class="btn btn-success" type="button">Добави</button>
+                    <button class="btn btn-danger" type="button">Изтрий</button>
+                </p>
+            </div>
+
+            <br>
+            <div class="row">
+                <div class="col col-lg-12 col-md-12 col-sm-12 col-12">
+
+                    <div class="table-responsive">
+                        <table class="table table-striped table-hover table-condensed">
+                            <thead>
+                                <tr>
+                                    <th width="5%"></th>
+                                    <th width="20%">Име</th>
+                                    <th width="30%">Email</th>
+                                    <th width="20%">Телефон</th>
+                                    <th width="15%" style="text-align: center">Действия</th>
+                                </tr>
+                            </thead>
+                        </table>
+                        <table class="table table-condensed table-scrollable">
+                            <tbody>
+                                <tr>
+                                    <td width="5%"><input type="checkbox"></td>
+                                    <td width="20%">Георги Иванов</td>
+                                    <td width="30%">ivanov@rentacar.bg</td>
+                                    <td width="20%">+358 77 856 7852</td>
+                                    <td width="15%" style="text-align: center">
+                                        <a href="./employee-management.html"><i class="fas fa-pen fa-lg" aria-hidden="true" style="color: #428bca"></i></a>
+                                        <a href="./employee-management.html"><i class="fa fa-trash fa-lg" aria-hidden="true" style="color: red"></i></a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox"></td>
+                                    <td>Иван Петров</td>
+                                    <td>petrov@rentacar.bg</td>
+                                    <td>+358 77 526 7888</td>
+                                    <td style="text-align: center">
+                                        <a href="./employee-management.html"><i class="fas fa-pen fa-lg" aria-hidden="true" style="color: #428bca"></i></a>
+                                        <a href="./employee-management.html"><i class="fa fa-trash fa-lg" aria-hidden="true" style="color: red"></i></a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox"></td>
+                                    <td>Генади Маринов</td>
+                                    <td>marinov@rentacar.bg</td>
+                                    <td>+358 77 856 1254</td>
+                                    <td style="text-align: center">
+                                        <a href="./employee-management.html"><i class="fas fa-pen fa-lg" aria-hidden="true" style="color: #428bca"></i></a>
+                                        <a href="./employee-management.html"><i class="fa fa-trash fa-lg" aria-hidden="true" style="color: red"></i></a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox"></td>
+                                    <td>Илиян Петракиев</td>
+                                    <td>petrakiev@rentacar.bg</td>
+                                    <td>+358 98 222 9586</td>
+                                    <td style="text-align: center">
+                                        <a href="./employee-management.html"><i class="fas fa-pen fa-lg" aria-hidden="true" style="color: #428bca"></i></a>
+                                        <a href="./employee-management.html"><i class="fa fa-trash fa-lg" aria-hidden="true" style="color: red"></i></a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                    </div>
+    </main>
+    <!--FOOTER-->
+    <footer class="footer mt-auto py-3" style="position:fixed;">
+        <div class="container-fluid">
+            <div class="header-footer pull-left">
+                <a href="#">&copy; Rent A Car</a>
+            </div>
+
+            <div class="phone-footer pull-right">
+                <a href="./index.html">Начало</a>
+                <a href="./employee-view.html">Общ преглед</a>
+                <a href="./view-queries.html">Заявки</a>
+                <a href="./employee-management.html">Служители</a>
+                <a href="./login.html">Изход</a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

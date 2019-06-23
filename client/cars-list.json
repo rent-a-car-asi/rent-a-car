@@ -1,0 +1,97 @@
+{
+    "toytota_corolla": {
+        "title": "Toyota Yaris Hybrid",
+        "image": "../images/cars/new_toytota_corolla_aut_facelift.jpg",
+        "price": "19.60",
+        "speed": "Автоматик",
+        "engine": "Хибрид",
+        "brand": "Toyota",
+        "type": "1",
+        "days": "9",
+        "year": "2019",
+        "extrases": [
+            { "type": "1", "title": "5 места", "image": "fa fa-user fa-lg" },
+            { "type": "1", "title": "2019", "image": "fa fa-calendar fa-lg" },
+            { "type": "1", "title": "климатик", "image": "far fa-snowflake fa-lg" },
+            { "type": "2", "title": "5 врати", "image": "../images/icons/car-door.png" },
+            { "type": "1", "title": "навигация", "image": "fas fa-map-marker-alt fa-lg" }
+        ],
+        "footer_extrases": [
+            { "type": "2", "title": "Хибрид", "image": "../images/icons/fuel-station.png" },
+            { "type": "1", "title": "Автоматик", "image": "fa fa-cogs fa-lg" },
+            { "type": "2", "title": "Лека кола", "image": "../images/icons/sports-car.png" }
+        ]
+    },
+    "renault_clio": {
+        "title": "Renault Clio IV комби",
+        "image": "../images/cars/new_renault_clio_iv_estate.jpg",
+        "price": "109.60",
+        "speed": "Ръчна",
+        "engine": "Дизел",
+        "brand": "Renault",
+        "type": "1",
+        "days": "9",
+        "year": "2018",
+        "extrases": [
+            { "type": "1", "title": "5 места", "image": "fa fa-user fa-lg" },
+            { "type": "1", "title": "2018", "image": "fa fa-calendar fa-lg" },
+            { "type": "1", "title": "климатик", "image": "far fa-snowflake fa-lg" },
+            { "type": "2", "title": "5 врати", "image": "../images/icons/car-door.png" },
+            { "type": "1", "title": "навигация", "image": "fas fa-map-marker-alt fa-lg" }
+        ],
+        "footer_extrases": [
+            { "type": "2", "title": "Дизел", "image": "../images/icons/fuel-station.png" },
+            { "type": "1", "title": "Ръчна", "image": "fa fa-cogs fa-lg" },
+            { "type": "2", "title": "Лека кола", "image": "../images/icons/sports-car.png" }
+        ]
+    },
+    "ford_focus": {
+        "title": "Ford Focus",
+        "image": "../images/cars/ford-focus.jpg",
+        "price": "109.60",
+        "speed": "Автоматик",
+        "engine": "Дизел",
+        "brand": "Ford",
+        "type": "1",
+        "days": "9",
+        "year": "2018",
+        "extrases": [
+            { "type": "1", "title": "5 места", "image": "fa fa-user fa-lg" },
+            { "type": "1", "title": "2018", "image": "fa fa-calendar fa-lg" },
+            { "type": "1", "title": "климатик", "image": "far fa-snowflake fa-lg" },
+            { "type": "2", "title": "2 врати", "image": "../images/icons/car-door.png" },
+            { "type": "1", "title": "навигация", "image": "fas fa-map-marker-alt fa-lg" },
+            { "type": "2", "title": "airbag", "image": "../images/icons/airbag.png" }
+        ],
+        "footer_extrases": [
+            { "type": "2", "title": "Дизел", "image": "../images/icons/fuel-station.png" },
+            { "type": "1", "title": "Автоматик", "image": "fa fa-cogs fa-lg" },
+            { "type": "2", "title": "Лека кола", "image": "../images/icons/sports-car.png" }
+        ]
+    },
+    "polo": {
+        "title": "VW Polo",
+        "image": "../images/cars/vw-polo-aut-2019.jpg",
+        "price": "90.60",
+        "speed": "Автоматик",
+        "engine": "Дизел",
+        "brand": "Volkswagen",
+        "type": "1",
+        "days": "9",
+        "year": "2015",
+        "extrases": [
+            { "type": "1", "title": "4 места", "image": "fa fa-user fa-lg" },
+            { "type": "1", "title": "2015", "image": "fa fa-calendar fa-lg" },
+            { "type": "1", "title": "климатик", "image": "far fa-snowflake fa-lg" },
+            { "type": "2", "title": "2 врати", "image": "../images/icons/car-door.png" },
+            { "type": "1", "title": "навигация", "image": "fas fa-map-marker-alt fa-lg" },
+            { "type": "2", "title": "airbag", "image": "../images/icons/airbag.png" }
+        ],
+        "footer_extrases": [
+            { "type": "2", "title": "Дизел", "image": "../images/icons/fuel-station.png" },
+            { "type": "1", "title": "Автоматик", "image": "fa fa-cogs fa-lg" },
+            { "type": "2", "title": "Лека кола", "image": "../images/icons/sports-car.png" }
+        ]
+    }
+
+}

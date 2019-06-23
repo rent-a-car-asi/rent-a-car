@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="bg">
+
+<head>
+    <title> Rent A Car </title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+    <link rel="stylesheet" href="../css/style.css" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">
+            <img src="../images/icons/car-icon.png" height="42" width="42" /> RENT A CAR
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+        <div class="collapse navbar-collapse" id="navbarContent">
+            <ul class="navbar-nav mr-auto"></ul>
+            <ul class="navbar-nav navbar-right my-2 my-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="./index.html">НАЧАЛО</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./employee-view.html">ОБЩ ПРЕГЛЕД</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./view-queries.html">ЗАЯВКИ</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./employee-management.html">СЛУЖИТЕЛИ</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./login.html">ИЗХОД</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <br />
+    <main>
+        <div class="container-fluid">
+            <div class="header-car-list">
+                <p class="pull-left">Служител: Иван Иванов</p>
+                <p class="pull-right">Дата: 28.02.2019</p>
+            </div>
+
+            <br>
+            <div class="row">
+                <div class="col col-lg-6 col-md-12 col-sm-12 col-12" style="border-right: 5px solid">
+                    <h3 class="col-header">Чакащи заявки</h3>
+                    <br>
+                    <div class="table-responsive">
+                        <table class="table table-striped table-hover table-condensed">
+                            <thead class="thead-dark">
+                                <tr>
+                                    <th width="15%">Дата</th>
+                                    <th width="25%">Място на доставка</th>
+                                    <th width="30%">Клиент</th>
+                                    <th width="15%">Кола</th>
+                                    <th width="15%" style="text-align: center">Действия</th>
+                                </tr>
+                            </thead>
+                        </table>
+                        <table class="table table-hover table-striped table-condensed table-scrollable">
+                            <tbody>
+                                <tr>
+                                    <td width="15%">01.03.2019</td>
+                                    <td width="25%">Разсадника, ул. Райна Княгиня 79</td>
+                                    <td width="30%">Георги Димитров</td>
+                                    <td width="15%">Мазда 3</td>
+                                    <td width="15%" style="text-align: center">
+                                        <a href="./view-queries.html"><i class="fa fa-check-circle fa-lg" aria-hidden="true" style="color: green"></i></a>
+                                        <a href="./view-queries.html"><i class="fa fa-trash fa-lg" aria-hidden="true" style="color: red"></i></a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>11.03.2019</td>
+                                    <td>Илинден, ул. Димитър Матов 54</td>
+                                    <td>Пламен Марков</td>
+                                    <td>Тойота Корола</td>
+                                    <td style="text-align: center">
+                                        <a href="./view-queries.html"><i class="fa fa-check-circle fa-lg" aria-hidden="true" style="color: green"></i></a>
+                                        <a href="./view-queries.html"><i class="fa fa-trash fa-lg" aria-hidden="true" style="color: red"></i></a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>17.03.2019</td>
+                                    <td>Студентски град, ул. проф. Христо Данов 35</td>
+                                    <td>Стойчо Младенов</td>
+                                    <td>БМВ 316</td>
+                                    <td style="text-align: center">
+                                        <a href="./view-queries.html"><i class="fa fa-check-circle fa-lg" aria-hidden="true" style="color: green"></i></a>
+                                        <a href="./view-queries.html"><i class="fa fa-trash fa-lg" aria-hidden="true" style="color: red"></i></a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                    </div>
+                </div>
+                <div class="col col-lg-6 col-md-12 col-sm-12 col-xs-12">
+                    <h3 class="col-header">Приети заявки</h3>
+                    <br>
+                    <div class="table-responsive">
+                        <table class="table table-striped table-hover table-condensed">
+                            <thead class="thead-dark">
+                                <tr>
+                                    <th width="15%">Дата</th>
+                                    <th width="25%">Място на доставка</th>
+                                    <th width="30%">Клиент</th>
+                                    <th width="15%">Кола</th>
+                                    <th width="15%">Действия</th>
+                                </tr>
+                            </thead>
+                        </table>
+                        <div class="bodycontainer scrollable">
+                            <table class="table table-hover table-striped table-condensed table-scrollable">
+                                <tbody>
+                                    <tr>
+                                        <td width="15%">05.02.2019</td>
+                                        <td width="25%">Студентски град, улица Атанас Манчев 15</td>
+                                        <td width="30%">Цветан Йончев</td>
+                                        <td width="15%">Мазда 3</td>
+                                        <td width="15%" style="text-align: center">
+                                            <a href="./view-queries.html"><i class="fa fa-check-circle fa-lg" aria-hidden="true" style="color: green"></i></a>
+                                            <a href="./view-queries.html"><i class="fa fa-trash fa-lg" aria-hidden="true" style="color: red"></i></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>14.02.2019</td>
+                                        <td>бул. Евлоги и Христо Георгиеви 3</td>
+                                        <td>Емил Костадинов</td>
+                                        <td>Мерцедес Бенц</td>
+                                        <td style="text-align: center">
+                                            <a href="./view-queries.html"><i class="fa fa-check-circle fa-lg" aria-hidden="true" style="color: green"></i></a>
+                                            <a href="./view-queries.html"><i class="fa fa-trash fa-lg" aria-hidden="true" style="color: red"></i></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>21.02.2019</td>
+                                        <td>бул. Цар Освободител 22</td>
+                                        <td>Любослав Пенев</td>
+                                        <td>БМВ 316</td>
+                                        <td style="text-align: center">
+                                            <a href="./view-queries.html"><i class="fa fa-check-circle fa-lg" aria-hidden="true" style="color: green"></i></a>
+                                            <a href="./view-queries.html"><i class="fa fa-trash fa-lg" aria-hidden="true" style="color: red"></i></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>14.02.2019</td>
+                                        <td>бул. Евлоги и Христо Георгиеви 3</td>
+                                        <td>Емил Костадинов</td>
+                                        <td>Мерцедес Бенц</td>
+                                        <td style="text-align: center">
+                                            <a href="./view-queries.html"><i class="fa fa-check-circle fa-lg" aria-hidden="true" style="color: green"></i></a>
+                                            <a href="./view-queries.html"><i class="fa fa-trash fa-lg" aria-hidden="true" style="color: red"></i></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>21.02.2019</td>
+                                        <td>бул. Цар Освободител 22</td>
+                                        <td>Любослав Пенев</td>
+                                        <td>БМВ 316</td>
+                                        <td style="text-align: center">
+                                            <a href="./view-queries.html"><i class="fa fa-check-circle fa-lg" aria-hidden="true" style="color: green"></i></a>
+                                            <a href="./view-queries.html"><i class="fa fa-trash fa-lg" aria-hidden="true" style="color: red"></i></a>
+                                        </td>
+                                    </tr>
+                                    <tr style="text-align: center">
+                                        <td>14.02.2019</td>
+                                        <td>бул. Евлоги и Христо Георгиеви 3</td>
+                                        <td>Емил Костадинов</td>
+                                        <td>Мерцедес Бенц</td>
+                                        <td>
+                                            <a href="./view-queries.html"><i class="fa fa-check-circle fa-lg" aria-hidden="true" style="color: green"></i></a>
+                                            <a href="./view-queries.html"><i class="fa fa-trash fa-lg" aria-hidden="true" style="color: red"></i></a>
+                                        </td>
+                                    </tr>
+                                    <tr style="text-align: center">
+                                        <td>21.02.2019</td>
+                                        <td>бул. Цар Освободител 22</td>
+                                        <td>Любослав Пенев</td>
+                                        <td>БМВ 316</td>
+                                        <td>
+                                            <a href="./view-queries.html"><i class="fa fa-check-circle fa-lg" aria-hidden="true" style="color: green"></i></a>
+                                            <a href="./view-queries.html"><i class="fa fa-trash fa-lg" aria-hidden="true" style="color: red"></i></a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </main>
+
+    <!--FOOTER-->
+    <footer class="footer mt-auto py-3" style="position: absolute;">
+        <div class="container-fluid">
+            <div class="header-footer pull-left">
+                <a href="#">&copy; Rent A Car</a>
+            </div>
+
+            <div class="phone-footer pull-right">
+                <a href="./index.html">Начало</a>
+                <a href="./employee-view.html">Общ преглед</a>
+                <a href="./view-queries.html">Заявки</a>
+                <a href="./employee-management.html">Служители</a>
+                <a href="./login.html">Изход</a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

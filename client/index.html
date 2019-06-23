@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <title> Rent A Car </title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" />
+    <!-- <link rel="stylesheet" href="./css/datapicker.css" /> -->
+    <link rel="stylesheet" type="text/css" href="../css/style.css" />
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+
+    <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js?fbclid=IwAR39sgO3R5u_yrU9XO9way3A8pucAJg87V19QKkZtwdVVTVedkz09TSGvTo"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://unpkg.com/gijgo@1.9.13/js/gijgo.min.js"></script>
+    <script src="../js/numscroller-1.0.js"></script>
+    <script src="../js/scripts.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="./index.html">
+                <img src="../images/icons/car-icon.png" height="42" width="42" /> RENT A CAR
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+            <!-- NAVBAR -->
+            <div class="collapse navbar-collapse" id="navbarContent">
+                <ul class="navbar-nav mr-auto"></ul>
+                <ul class="navbar-nav navbar-right my-2 my-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./index.html">НАЧАЛО</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./about.html">ЗА НАС</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./contacts.html">КОНТАКТИ</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Photo Background -->
+    <section class="container-fluid photo-background">
+        <div class="row">
+            <div class="overlay-home"></div>
+            <div class="col-xs-12 text-container">
+                <form action="./search-page.html" class="container">
+                    <div class="form-row">
+                        <div class="col-md-4 col-xs-12 form-group">
+                            <label for="pickup-place">Място на вземане:</label>
+                            <input type="text" placeholder="Въведете място на вземане" name="pickup-place" required />
+                        </div>
+
+                        <div class="col-md-4 col-xs-12 form-group">
+                            <label for="startDate">Дата на вземане:</label>
+                            <input type="date" placeholder="Въведете дата на вземане" name="startDate" id="startDate" required />
+                        </div>
+
+                        <div class="col-md-4 col-xs-12 form-group">
+                            <label for="pickup-time">Час на вземане:</label>
+                            <input type="time" placeholder="Въведете час на вземане" name="pickup-time" required />
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="col-md-4 col-xs-12 form-group">
+                            <label for="return-place">Място на връщане:</label>
+                            <input type="text" placeholder="Въведете място на връщане" name="return-place" required />
+                        </div>
+
+                        <div class="col-md-4 col-xs-12 form-group">
+                            <label for="endDate">Дата на връщане:</label>
+                            <input type="date" placeholder="Въведете дата на връщане" name="endDate" id="endDate" required />
+                        </div>
+
+                        <div class="col-md-4 col-xs-12 form-group">
+                            <label for="pickup-time">Час на връщане:</label>
+                            <input type="time" placeholder="Въведете час на връщане" name="return-time" required />
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 col-xs-12 pull-right">
+                        <button type="submit" class="btn btn-submit">Търсене</button>
+                    </div>
+                </form>
+
+                <div class="arrow bounce">
+                    <a href="#section2">
+                        <i class="fas fa-angle-double-down"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- <img src="images/background-v4.jpg" /> -->
+    </section>
+    <!-- END Photo BG -->
+
+    <!-- Services -->
+    <main id="section2">
+        <section class="container">
+            <div class="row">
+                <div class="col-md-4 col-xs-12 service">
+                    <div class="circle"><i class="fa fa-money"></i></i>
+                    </div>
+                    <strong>Най-добра цена</strong>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus luctus urna sed urna ultricies ac tempor dui sagittis.
+                    </p>
+                </div>
+                <div class="col-md-4 col-xs-12 service">
+                    <div class="circle"><i class="fa fa-check-square"></i></div>
+                    <strong>Гаранция за сигурност и качество</strong>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus luctus urna sed urna ultricies ac tempor dui sagittis.
+                    </p>
+                </div>
+                <div class="col-md-4 col-xs-12 service">
+                    <div class="circle"><i class="fa fa-truck"></i></div>
+                    <strong>Автомобил за всеки повод</strong>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus luctus urna sed urna ultricies ac tempor dui sagittis.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <!-- END Services -->
+    </main>
+
+    <!-- COUNTER -->
+    <div class="grey-bg c-no container-fluid">
+        <div class="container">
+            <div class="row" id="counter">
+                <div class="col-sm-4 counter-Txt"> Над <span class='numscroller' data-min='1' data-max='1000' data-delay='5' data-increment='10'>1000</span> Доволни клиенти</div>
+                <div class="col-sm-4 counter-Txt"> Над <span class='numscroller' data-min='1' data-max='1000' data-delay='5' data-increment='10'>1000</span> Километра на ден</div>
+                <div class="col-sm-4 counter-Txt margin-bot-35"> Над <span class='numscroller' data-min='1' data-max='1000' data-delay='5' data-increment='10'>1000</span> Нови коли</div>
+            </div>
+        </div>
+    </div>
+
+    <!--FOOTER-->
+    <footer class="footer mt-auto py-3">
+        <div class="container-fluid">
+            <div class="header-footer pull-left">
+                <a href="./index.html">&copy; Rent A Car</a>
+            </div>
+
+            <div class="links-footer pull-left">
+                <a href="./index.html">Начало</a>
+                <a href="./about.html">За нас</a>
+                <a href="./contacts.html">Контакти</a>
+            </div>
+
+            <div class="phone-footer pull-right">
+                <a>За връзка с нас: 088 1234 5678</a>
+            </div>
+        </div>
+    </footer>
+
+    <a id="back-to-top" href="#" class="back-to-top" role="button" title="Click to return on the top page" data-placement="left"><i class="fas fa-chevron-circle-up"></i></a>
+
+    <script>
+        $(window).scroll(function() {
+            $(".arrow").css("opacity", 1 - $(window).scrollTop() / 250);
+            //250 is fade pixels
+        });
+    </script>
+
+</body>
+
+</html>
