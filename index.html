@@ -185,6 +185,13 @@
   <a id="back-to-top" href="#" class="back-to-top" role="button" title="Click to return on the top page"
     data-placement="left"><i class="fas fa-chevron-circle-up"></i></a>
 
+  <script>
+    $(window).scroll(function () {
+      $(".arrow").css("opacity", 1 - $(window).scrollTop() / 250);
+      //250 is fade pixels
+    });
+  </script>
+
 </body>
 
 </html>
