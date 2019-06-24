@@ -617,15 +617,15 @@ Lots taken from Flatly (MIT): https://bootswatch.com/4/flatly/bootstrap.css
 /* "primary" coloring */
 .fc-button-primary {
   color: #fff;
-  background-color: #66101f;
+  background-color: #28a745;
   opacity: 0.9;
-  border-color: #66101f; }
+  border-color: #28a745; }
 
 .fc-button-primary:hover {
   color: #fff;
-  background-color: #66101f;
+  background-color: #28a745;
   opacity: 1;
-  border-color: #66101f; }
+  border-color: #28a745; }
 
 .fc-button-primary:focus {
   -webkit-box-shadow: 0 0 0 0.2rem rgba(76, 91, 106, 0.5);
